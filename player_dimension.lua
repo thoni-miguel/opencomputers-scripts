@@ -1,3 +1,4 @@
 local event, username, fromDim, toDim = os.pullEvent("playerChangedDimension")
-local message = string.format("%s has changed dimension from %s to %s", username, fromDim, toDim)
+local message = "Player " .. username .. " left the dimension " .. fromDim .. " and is now in " .. toDim
+
 shell.run("sendmessage", message)
